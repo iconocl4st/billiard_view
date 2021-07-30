@@ -1,48 +1,6 @@
+add an attempts log
+make shots come through the ball locations request (merge)
 
+implement bank shots
+expand the shot-key
 
-
-
-
-move table state into the table view
-
-
-
-
-write gopro app
-
-
-
-
-go pro server
-	status
-	take photo
-	schedule photos
-	list photos
-	get photo
-		mapped
-	calibrate
-
-shot server
-	set ball locations
-	get shot
-	list shots
-	get random shot
-		spot shot
-		random
-	
-	list attempts
-	make attempt
-	select shot
-
-
-
-pool client
-	show shot cuts
-	show board
-	reset table
-	
-	
-	
-	
-	
-	
