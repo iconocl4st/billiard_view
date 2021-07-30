@@ -31,20 +31,20 @@ const TableView = props => {
     const canvasRef = useRef(null);
     const viewWidth = TABLE_WIDTH_PERCENTAGE * window.innerWidth;
     const dims = callGetDimensions(viewWidth, dimensions.table, graphics.inset);
-    const backgroundImage = new Image();
-    backgroundImage.src = 'http://localhost:5000/image/';
+    // const backgroundImage = new Image();
+    // backgroundImage.src = 'http://localhost:5000/image/';
 
     useEffect(() => {
         const canvas = canvasRef.current;
         const context = canvas.getContext('2d');
         const mapper = createMapper(dims);
         const g = createRenderer(context, mapper);
-        context.drawImage(backgroundImage, 0, 0, context.canvas.width, context.canvas.height);
+        // context.drawImage(backgroundImage, 0, 0, context.canvas.width, context.canvas.height);
         g.setBackground(graphics.background);
         for (const graphic of graphics.graphics) {
             g.drawGraphics(graphic);
         }
-    }, [viewWidth, dims, graphics, backgroundImage]);
+    }, [viewWidth, dims, graphics, /*backgroundImage*/]);
 
 
 
